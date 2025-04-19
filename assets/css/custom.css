@@ -1,0 +1,55 @@
+/* Custom styles for academic profile */
+
+.two-column-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+.left-column {
+  flex: 2;
+  padding-right: 2em;
+}
+
+.right-column {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-image {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Make author avatar display as rectangle instead of oval and cover full sidebar width */
+.author__avatar img {
+  border-radius: 5px !important;
+  max-width: 100% !important; /* Make image use full width of the container */
+  width: 100%;
+}
+
+.see-all-link {
+  text-align: right;
+  margin-top: -1em;
+  margin-bottom: 2em;
+}
+
+.grid__wrapper {
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .two-column-container {
+    flex-direction: column-reverse;
+  }
+  
+  .left-column {
+    padding-right: 0;
+    margin-top: 2em;
+  }
+  
+  .right-column {
+    margin-bottom: 1em;
+  }
+}
