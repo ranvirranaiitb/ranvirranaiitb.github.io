@@ -7,14 +7,3 @@ $fa-font-path: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfo
 @import "minimal-mistakes"; // main partials
 @import "custom"; // our custom styles
 
-/* Override any filters on images and ensure proper icon display */
-.author__avatar img,
-.sidebar img {
-  filter: none !important;
-  -webkit-filter: none !important;
-  opacity: 1 !important;
-}
-
-.social-icons .fa-x-twitter {
-  color: inherit !important;
-}

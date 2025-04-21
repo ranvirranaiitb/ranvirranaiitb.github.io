@@ -22,12 +22,6 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Make author avatar display as rectangle instead of oval and cover full sidebar width */
-.author__avatar img {
-  border-radius: 5px !important;
-  max-width: 100% !important; /* Make image use full width of the container */
-  width: 100%;
-}
 
 /* Override the sidebar opacity to keep it clear at all times */
 .sidebar {

@@ -222,51 +222,6 @@
   background: #e5dbff;
 }
 
-/* Author avatar styling */
-.author__avatar {
-  display: table-cell;
-  vertical-align: top;
-  width: 36px;
-  height: 36px;
-  position: relative;
-
-  img {
-    max-width: 110px !important;
-    border-radius: 5px !important;
-    width: 100%;
-    filter: none !important;
-    -webkit-filter: none !important;
-    opacity: 1 !important;
-    transition: transform 0.2s ease;
-  }
-}
-
-.sidebar .author__avatar {
-  display: block;
-  width: auto;
-  height: auto;
-  margin-bottom: 1em;
-
-  img {
-    max-width: 110px !important;
-    border-radius: 5px !important;
-    filter: none !important;
-    -webkit-filter: none !important;
-    opacity: 1 !important;
-  }
-}
-
-.author__avatar img, .sidebar img {
-  filter: none !important;
-  -webkit-filter: none !important;
-  opacity: 1 !important;
-  transition: transform 0.2s ease;
-}
-
-.author__avatar img:hover, .sidebar img:hover {
-  transform: scale(1.02);
-}
-
 @media screen and (max-width: 768px) {
   .two-column-container {
     flex-direction: column-reverse;
@@ -480,6 +435,13 @@
 
 .talk-links .btn--primary:hover {
   background-color: #3367D6;
+}
+
+/* Make author avatar display as rectangle instead of oval and cover full sidebar width */
+.author__avatar img {
+  border-radius: 50% !important; /* Changed from 5px to 0 to make it completely square */
+  max-width: 65% !important; /* Make image use full width of the container */
+  width: 80%;
 }
 
 @media (max-width: 768px) {
