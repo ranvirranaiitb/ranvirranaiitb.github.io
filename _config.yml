@@ -22,7 +22,8 @@ github_username: ranvirranaiitb
 linkedin_username: ranvir-rana-b3121bbb
 
 # Build settings
-theme: minimal-mistakes-jekyll
+# theme: minimal-mistakes-jekyll  # commenting out the theme
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Custom CSS
