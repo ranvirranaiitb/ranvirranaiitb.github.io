@@ -15,7 +15,7 @@ classes:
   
   <h2>Roles</h2>
   <p>
-  I’ve worked across research, entrepreneurship, and technical advisory roles. I co-founded and served as CEO of Witness Chain, leading efforts to bridge digital systems with real-world verification. I’ve advised multiple early-stage teams on system design and strategy. After my PhD, I was a Guest Lecturer at Princeton University, where I taught topics of Decentralized Finance. </p>
+  I’ve worked across research, entrepreneurship, and technical advisory roles. I co-founded and serve as CEO of Witness Chain, leading efforts to bridge digital systems with real-world verification. I’ve advised multiple early-stage teams on system design and strategy. After my PhD, I was a Guest Lecturer at Princeton University, where I taught topics of Decentralized Finance. </p>
 </div>
 
 ## Research Focus
