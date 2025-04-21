@@ -16,7 +16,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Personal website of Ranvir Rana, Researcher, Entrepreneur, and Systems Strategist.
   Showcasing professional achievements, publications, talks, and insights.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ranvirrana.com" # the base hostname & protocol for your site
 twitter_username: 0xranvir
 github_username: ranvirranaiitb
 linkedin_username: ranvir-rana-b3121bbb
