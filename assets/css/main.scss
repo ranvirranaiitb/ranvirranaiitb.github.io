@@ -2,8 +2,19 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+$fa-font-path: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts";
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+@import "custom"; // our custom styles
 
-/* Custom CSS */
-@import "custom"; /* Our custom styles */
+/* Override any filters on images and ensure proper icon display */
+.author__avatar img,
+.sidebar img {
+  filter: none !important;
+  -webkit-filter: none !important;
+  opacity: 1 !important;
+}
+
+.social-icons .fa-x-twitter {
+  color: inherit !important;
+}

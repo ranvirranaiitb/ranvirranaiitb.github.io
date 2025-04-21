@@ -26,9 +26,14 @@ linkedin_username: ranvir-rana-b3121bbb
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
 # Custom CSS
 extra_css:
-  - /assets/css/custom.css
+  - _sass/_custom.scss
 
 # Outputting
 permalink: /:categories/:title/
