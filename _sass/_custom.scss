@@ -1,5 +1,66 @@
 /* Custom styles for academic profile */
 
+:root {
+  --primary-color: #4285F4;
+  --primary-dark: #3367D6;
+  --accent-color: #34A853;
+  --text-color: #2c3e50;
+  --text-light: #656d78;
+  --background-light: #f8f9fa;
+  --card-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  --hover-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Global text improvements */
+body {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.page__content {
+  font-size: 1.1em;
+  p, li {
+    color: var(--text-color);
+  }
+}
+
+/* Enhanced card styling */
+.card {
+  border: none;
+  background: var(--background-light);
+  box-shadow: var(--card-shadow);
+}
+
+.card:hover {
+  box-shadow: var(--hover-shadow);
+}
+
+/* Improved headings */
+.page__title, 
+.archive__item-title {
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+/* Navigation enhancements */
+.masthead {
+  background-color: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.greedy-nav {
+  background: transparent;
+  
+  a {
+    color: var(--text-color);
+    
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}
+
 .two-column-container {
   display: flex;
   flex-wrap: wrap;
@@ -50,9 +111,7 @@
 .card {
   border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  background: #fff;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -61,7 +120,6 @@
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .card a {
