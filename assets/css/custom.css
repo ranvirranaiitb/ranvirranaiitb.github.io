@@ -29,6 +29,12 @@
   width: 100%;
 }
 
+/* Override the sidebar opacity to keep it clear at all times */
+.sidebar {
+  opacity: 1 !important;
+  transition: none !important;
+}
+
 .see-all-link {
   text-align: right;
   margin-top: -1em;
@@ -53,3 +59,250 @@
     margin-bottom: 1em;
   }
 }
+
+/* Publications Page Styling */
+.publications-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.publications-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.publications-header p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.publication-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background-color: #e9e9e9;
+}
+
+.filter-btn.active {
+  background-color: #4285F4;
+  color: white;
+  border-color: #4285F4;
+}
+
+.featured-publications {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.featured-publication-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-top: 4px solid #4285F4;
+}
+
+.featured-publication-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.publications-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.publication-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.publication-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.publication-card h3, 
+.featured-publication-card h3 {
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.publication-card h3 a, 
+.featured-publication-card h3 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.publication-card h3 a:hover, 
+.featured-publication-card h3 a:hover {
+  color: #4285F4;
+}
+
+.pub-authors {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.pub-venue {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.pub-excerpt {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.pub-links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.pub-links a {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.paper-link {
+  background-color: #4285F4;
+  color: white;
+}
+
+.paper-link:hover {
+  background-color: #3367D6;
+}
+
+.code-link {
+  background-color: #34A853;
+  color: white;
+}
+
+.code-link:hover {
+  background-color: #2E8B57;
+}
+
+.slides-link {
+  background-color: #EA4335;
+  color: white;
+}
+
+.slides-link:hover {
+  background-color: #D32F2F;
+}
+
+.see-all-link {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .publications-container,
+  .featured-publications {
+    grid-template-columns: 1fr;
+  }
+  
+  .publication-filter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* Talk Cards */
+.talk-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.talk-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.talk-content h3 {
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.talk-content h3 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.talk-content h3 a:hover {
+  color: #4285F4;
+}
+
+.talk-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.talk-excerpt {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.talk-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.talk-links .btn {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.talk-links .btn--primary {
+  background-color: #4285F4;
+  color: white;
+}
+
+.talk-links .btn--primary:hover {
+  background-color: #3367D6;
+}
+

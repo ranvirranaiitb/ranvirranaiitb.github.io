@@ -17,9 +17,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   Showcasing professional achievements, publications, talks, and insights.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
+twitter_username: 0xranvir
 github_username: ranvirranaiitb
-linkedin_username: ranvirrana
+linkedin_username: ranvir-rana-b3121bbb
 
 # Build settings
 theme: minimal-mistakes-jekyll
@@ -104,28 +104,31 @@ defaults:
 author:
   avatar           : "/assets/images/RanvirRana.jpeg"
   bio              : "Researcher, Entrepreneur, System Strategist"
-  location         : "Your Location"
+  location         : "Princeton, NJ"
   email            : 
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your-email@example.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ranvirranaiitb"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?hl=en&user=0ei9XEUAAAAJ"
+    - label: "X"
+      icon: "fab fa-fw fa-x-twitter"
+      url: "https://x.com/0xranvir"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/ranvirrana"
+      url: "https://www.linkedin.com/in/ranvir-rana-b3121bbb/"
 
 # Site Footer
 footer:
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ranvirranaiitb"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?hl=en&user=0ei9XEUAAAAJ"
+    - label: "X"
+      icon: "fab fa-fw fa-x-twitter"
+      url: "https://x.com/0xranvir"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/ranvirrana"
+      url: "https://www.linkedin.com/in/ranvir-rana-b3121bbb/"
 
 # Reading Files
 include:

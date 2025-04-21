@@ -1,0 +1,25 @@
+---
+layout: single
+---
+
+{{ content }}
+
+<div class="cards-container">
+  {% for card in page.cards %}
+    <div class="card">
+      <a href="{{ card.link }}" target="_blank" rel="noopener noreferrer">
+        <div class="card-thumbnail">
+          <img src="{{ card.thumbnail | relative_url }}" alt="{{ card.title }}" onerror="this.src='/assets/images/placeholder-image.jpg';this.onerror='';">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">{{ card.title }}</h3>
+          <p class="card-meta">
+            <span class="card-date">{{ card.date }}</span>
+            <span class="card-venue">{{ card.venue }}</span>
+          </p>
+          <p class="card-description">{{ card.description }}</p>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+</div>
