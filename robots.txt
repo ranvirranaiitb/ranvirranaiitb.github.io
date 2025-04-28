@@ -1,0 +1,16 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://ranvirranaiitb.github.io/sitemap.xml
+
+# Specifically allow profile photo
+Allow: /assets/images/RanvirRana.jpeg
+
+# Prevent duplicate content indexing
+Disallow: /assets/
+Disallow: /*.json$
+Disallow: /*?*
+Disallow: /tags/
+Disallow: /categories/

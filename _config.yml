@@ -9,12 +9,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "Ranvir Rana"
+title: "Ranvir Rana | Researcher, Entrepreneur, and Systems Strategist"
 name: "Ranvir Rana"
-email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal website of Ranvir Rana, Researcher, Entrepreneur, and Systems Strategist.
-  Showcasing professional achievements, publications, talks, and insights.
+    Ranvir Rana is an expert in decentralized consensus mechanisms, finance, and visual models.
+    CEO of Witness Chain, former guest lecturer at Princeton University, and PhD graduate from the University of Illinois at Urbana-Champaign.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ranvirranaiitb.github.io" # the base hostname & protocol for your site
 twitter_username: 0xranvir
@@ -55,6 +54,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-seo-tag
 
 # Collections
 collections:
@@ -115,7 +115,9 @@ defaults:
 
 # Site Author
 author:
-  avatar           : "/assets/images/RanvirRana.jpeg"
+  avatar:
+    path: "/assets/images/RanvirRana.jpeg"
+    alt: "Ranvir Rana - Researcher, Entrepreneur, and Systems Strategist"
   bio              : "Researcher, Entrepreneur, System Strategist"
   location         : "Princeton, NJ"
   email            : 
