@@ -21,6 +21,13 @@ twitter_username: 0xranvir
 github_username: ranvirranaiitb
 linkedin_username: ranvir-rana-b3121bbb
 
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-2YW9CMF6FD"
+    anonymize_ip: false
+
 # Build settings
 # theme: minimal-mistakes-jekyll  # commenting out the theme
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
