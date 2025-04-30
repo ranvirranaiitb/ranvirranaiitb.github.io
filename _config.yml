@@ -116,7 +116,7 @@ defaults:
 # Site Author
 author:
   avatar           : "/assets/images/RanvirRana.jpeg"
-  avatar_alt       : "Ranvir Rana| Researcher, Entrepreneur, and Systems Strategist"
+  avatar_alt       : "Ranvir Rana Princeton/UIUC"
   bio              : "Researcher, Entrepreneur, System Strategist"
   location         : "Princeton, NJ"
   email            : 

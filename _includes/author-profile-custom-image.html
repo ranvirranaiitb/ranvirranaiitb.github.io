@@ -1,0 +1,37 @@
+{% assign author = page.author | default: page.authors[0] | default: site.author %}
+
+<div itemscope itemtype="https://schema.org/Person">
+  {% if author.avatar %}
+    <div class="author__avatar">
+      <img src="{{ author.avatar | relative_url }}" alt="{{ author.avatar_alt | default: 'Author profile photo' }}" itemprop="image">
+    </div>
+  {% endif %}
+
+  <div class="author__content">
+    {% if author.name %}
+      <h3 class="author__name" itemprop="name">{{ author.name }}</h3>
+    {% endif %}
+    {% if author.bio %}
+      <div class="author__bio" itemprop="description">{{ author.bio | markdownify }}</div>
+    {% endif %}
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
+    <ul class="author__urls social-icons">
+      {% if author.location %}
+        <li><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> {{ author.location }}</li>
+      {% endif %}
+      {% if author.links %}
+        {% for link in author.links %}
+          {% if link.url contains "://" %}
+            {% assign url = link.url %}
+          {% else %}
+            {% assign url = link.url | relative_url %}
+          {% endif %}
+          <li><a href="{{ url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i><span class="label">{{ link.label }}</span></a></li>
+        {% endfor %}
+      {% endif %}
+    </ul>
+  </div>
+</div>
