@@ -15,10 +15,13 @@ description: >- # this means to ignore newlines until "baseurl:"
     Ranvir Rana is an expert in decentralized consensus mechanisms, finance, and visual models.
     CEO of Witness Chain, former guest lecturer at Princeton University, and PhD graduate from the University of Illinois at Urbana-Champaign.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ranvirranaiitb.github.io" # the base hostname & protocol for your site
+url: "https://ranvirrana.com" # primary domain
+alternate_domains:
+  - "https://ranvirranaiitb.github.io"
 twitter_username: 0xranvir
 github_username: ranvirranaiitb
 linkedin_username: ranvir-rana-b3121bbb
+
 
 # Analytics
 analytics:
