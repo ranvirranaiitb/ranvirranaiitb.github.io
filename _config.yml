@@ -115,9 +115,8 @@ defaults:
 
 # Site Author
 author:
-  avatar:
-    path: "/assets/images/RanvirRana.jpeg"
-    alt: "Ranvir Rana - Researcher, Entrepreneur, and Systems Strategist"
+  avatar           : "/assets/images/RanvirRana.jpeg"
+  avatar_alt       : "Ranvir Rana| Researcher, Entrepreneur, and Systems Strategist"
   bio              : "Researcher, Entrepreneur, System Strategist"
   location         : "Princeton, NJ"
   email            : 
